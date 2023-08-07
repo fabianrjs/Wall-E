@@ -14,14 +14,14 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.platform.LocalView
 import androidx.core.view.WindowCompat
 
-val walleColorScheme = darkColorScheme(
+val wallEColorScheme = darkColorScheme(
     primary = Purple40,
-    secondary = PurpleGrey40,
+    secondary = Blue,
     tertiary = Pink40,
-    background = Color.Black
+    background = Color.Black,
+    onPrimary = PurpleGrey40
     /* Other default colors to override
     surface = Color(0xFFFFFBFE),
-    onPrimary = Color.White,
     onSecondary = Color.White,
     onTertiary = Color.White,
     onBackground = Color(0xFF1C1B1F),
@@ -39,7 +39,7 @@ fun WallETheme(
             val context = LocalContext.current
             dynamicDarkColorScheme(context)
         }
-        else -> walleColorScheme
+        else -> wallEColorScheme
     }
     val view = LocalView.current
     if (!view.isInEditMode) {
