@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Wall-E</string>
+
+    <!-- Prompt Form -->
+    <string name="home_screen_prompt_label">Prompt</string>
+    <string name="home_screen_execute_prompt_button_text">Generar Wallpapers</string>
+    <string name="home_screen_clear_prompt_text">Borrar Prompt</string>
 </resources>
